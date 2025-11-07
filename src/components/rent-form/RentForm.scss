@@ -1,0 +1,61 @@
+@import '../../style.scss' ; 
+.rantFormContainer {
+    background-color: $red2;
+    width: inherit;
+    height: 294px;
+    width: $widthLarge;
+    margin: auto;
+    margin-top: -100px;
+    & .btnContainer {
+        display: flex;
+        gap: 3px;
+        width: 1142px;
+        margin: auto;
+        & button{
+            margin-top: 3rem;
+            background-color: #fff;
+            border: none;
+            color: $gray2;
+            width: 123px;
+            height: 48px;
+        }
+        & .active {
+            color: $red;
+        }
+    }
+    & .formContainer {
+         width: 1142px;
+         margin: auto;
+         background-color: #fff;
+    }
+}
+form {
+    display: flex;
+    justify-content: center;
+    gap: 66px;
+    & .form-group {
+        margin-top: 2rem;
+        height: 82px;
+        & label {
+            color: $gray1;
+        }
+        & input {
+            color: $gray2;
+            border: none;
+            outline: none;
+            width: 161px;
+            height: 42px;
+        }
+        & input::placeholder {
+            color: $gray2;
+        }
+        & button {
+            background-color: $red;
+            color: #fff;
+            width: 146px;
+            height: 58px;
+            border: none;
+        }
+    }
+
+}

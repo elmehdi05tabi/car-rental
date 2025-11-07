@@ -1,0 +1,42 @@
+@import '../../style.scss'  ;
+.popularCarContainer {
+    margin-top: 2rem;
+}
+.infoContainer {
+    width: 630px;
+    text-align: center;
+    margin: auto;
+    line-height: -2;
+    height: 134px;
+    & h1{
+        color: $red;
+        font-size: 20px;
+    }
+    & h2 {
+        font-size: 35px;
+        color: $gray1;
+    }
+    & p {
+        color: $gray2;
+        font-size: 15px;
+    }
+}
+.cars-container{
+    width:$widthLarge;
+    margin-top: 2rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21px;
+}
+.All {
+    background-color: $red;
+    width: 116px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    height: 58px;
+    border: none;
+    margin-top: 2rem;
+}

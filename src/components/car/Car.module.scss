@@ -1,0 +1,56 @@
+@import '../../style.scss' ;
+.carContainer {
+    box-shadow: 1px 1px 5px #f0eeee;
+    width: 398px;
+    height: 400px;
+    margin-top:50px;
+}
+.carImageContainer{
+    background-color: #F2F2F2;
+    min-height: 200px;
+    display: grid;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    & img {
+        max-width: 438px;
+    }
+}
+.description {
+    width: 90%;
+    margin: auto;
+}
+.description h2 {
+    color: $gray2;
+    font-weight: 400;
+}
+.description span {
+    color :#D9D9D9 ;
+} 
+.description p span{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.description p {
+    display: flex;
+    justify-content: space-between;
+    color: #D9D9D9;
+}
+.description p span:last-child {
+    color: #D9D9D9;
+    font-size: 15px;
+}
+.detail {
+    background-color: $red;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    height: 64px;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 2rem;
+}

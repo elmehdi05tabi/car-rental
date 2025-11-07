@@ -1,0 +1,13 @@
+.containerSection {
+    margin-top: 2rem;
+    & img:first-child {
+        height: 534px;
+        width: 770px;
+    }
+    & img:last-child {
+        height: 454px;
+        width: 853px;
+        margin-top: -300px;
+        margin-left: -74px;
+    }
+}

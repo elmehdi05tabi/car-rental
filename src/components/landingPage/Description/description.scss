@@ -1,0 +1,35 @@
+@import '../../../style.scss' ;
+.descriptionCotainer {
+    width: 800px;
+    height: 377px;
+    transform: translateY(203px);
+    & h1 {
+        color: $gray1;
+        font-size: 50px;
+        text-indent: 20px;
+    }
+    & p {
+        width: 600px;
+        color: $gray2;
+        font-size: 19px;
+    }
+    & .btn {
+        width: 363px;
+        display: flex;
+        gap: 5px;
+        button:first-child {
+            background-color: $red;
+            color: #fff;
+            width: 202px;
+            border: none;
+            height: 64px;
+        }
+        button:last-child {
+            background-color: #fff;
+            border: $red 2px solid ;
+            color: $red;
+            width: 160px;
+            height: 64px;
+        }
+    }
+}

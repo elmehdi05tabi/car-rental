@@ -1,0 +1,16 @@
+@import '../../style.scss' ; 
+.navContainer {
+    width: $widthLarge;
+    margin: auto;
+    display: flex;  
+    gap: 520px;
+    & .navbar {
+        display: flex;
+        gap: 33px;
+        list-style: none;
+        & a {
+            color:$black ;
+            text-decoration: none;
+        }
+    }
+}

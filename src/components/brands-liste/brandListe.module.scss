@@ -1,0 +1,15 @@
+@import '../../style.scss' ; 
+.brandListeContainer {
+    display: flex;
+    width:$widthLarge;
+    height: 80;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 50px;
+    & button {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
