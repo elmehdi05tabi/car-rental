@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/car-rental/static/css/main.9c943057.css",
+    "main.js": "/car-rental/static/js/main.505fe9c0.js",
+    "static/js/453.139c287d.chunk.js": "/car-rental/static/js/453.139c287d.chunk.js",
+    "static/media/cars.png": "/car-rental/static/media/cars.bfa1a4c6b719819ae682.png",
+    "static/media/carLandingPage.png": "/car-rental/static/media/carLandingPage.457b2bf1a2b2d69e36c9.png",
+    "static/media/long.png": "/car-rental/static/media/long.e27c53d386f24cab937b.png",
+    "static/media/private.png": "/car-rental/static/media/private.2c444dbfd567069cca12.png",
+    "static/media/instant.png": "/car-rental/static/media/instant.2a1ec9901711edf904db.png",
+    "static/media/world.png": "/car-rental/static/media/world.f04a7fbba550c9eb0702.png",
+    "static/media/LexusCT200H.png": "/car-rental/static/media/LexusCT200H.9493d6aea507b7c60dbf.png",
+    "static/media/MarcedesBenz.png": "/car-rental/static/media/MarcedesBenz.1df7df3e167218a0b35f.png",
+    "static/media/JaguarF-Pace.png": "/car-rental/static/media/JaguarF-Pace.0309d7c51db48f071eeb.png",
+    "static/media/bmw.png": "/car-rental/static/media/bmw.abcac81470b533140880.png",
+    "static/media/jaguar.png": "/car-rental/static/media/jaguar.7642b087def72bb3ea31.png",
+    "static/media/hianday.png": "/car-rental/static/media/hianday.c5b08ca08feb35ba6d51.png",
+    "index.html": "/car-rental/index.html",
+    "main.9c943057.css.map": "/car-rental/static/css/main.9c943057.css.map",
+    "main.505fe9c0.js.map": "/car-rental/static/js/main.505fe9c0.js.map",
+    "453.139c287d.chunk.js.map": "/car-rental/static/js/453.139c287d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c943057.css",
+    "static/js/main.505fe9c0.js"
+  ]
+}
