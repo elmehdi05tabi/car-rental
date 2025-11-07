@@ -1,0 +1,35 @@
+@import 'leaflet/dist/leaflet.css';
+@import '../../style.scss' ; 
+.contactContainer {
+    width: $widthLarge;
+    margin: auto;
+    height: 575px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.ContactInfoContainer {
+    width: 492px;
+    & h3{
+        color: $red2;
+        font-size: 16px;
+    }
+    & h2 {
+        color: $gray1;
+        font-size: 30px;
+    }
+    & p{
+        color: $gray2;
+    }
+    & .card {
+        display: flex;
+        margin-top: 2.5rem;
+        gap: 15px;
+        align-items: center;
+        & button {
+            border: none;
+            background-color: transparent;
+            cursor:pointer ; 
+        }
+    }
+}

@@ -9,6 +9,7 @@ import store from './app/store/store';
 import OurServices from './components/our_services/OurServices'
 import { Provider } from 'react-redux'
 import Advantages from './components/advantages/Advantages'
+import Contact from './components/contact/Contact'
 function App() {
   return (
     <div className='container' >
@@ -20,6 +21,7 @@ function App() {
       <PopularCar/>
       <OurServices/>
       <Advantages/>
+      <Contact/>
       </Provider>
     </div>
   )
