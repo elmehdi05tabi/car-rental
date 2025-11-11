@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-function MapRoute({ start, end,width,height,isvalid }) {
+function MapRoute({ start, end, width, height, isvalid, view }) {
   useEffect(() => {
     if (!start || !end) return;
 
     // Créer la carte centrée sur la position de départ
-    const map = L.map('map').setView(start, 7);
+    const map = L.map('map').setView(start, view);
 
     // Ajouter le fond de carte OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -28,9 +28,15 @@ function MapRoute({ start, end,width,height,isvalid }) {
       iconAnchor: [20, 40],
     });
 
-    // Ajouter les marqueurs
-    L.marker(start, { icon: startIcon }).addTo(map).bindPopup("Départ").openPopup();
-    L.marker(end, { icon: endIcon }).addTo(map).bindPopup("Arrivée");
+    // Ajouter les marqueurs (affichés tout le temps)
+    const startMarker = L.marker(start, { icon: startIcon }).addTo(map);
+    const endMarker = L.marker(end, { icon: endIcon }).addTo(map);
+
+    // Si la route est valide, afficher les popups
+    if (isvalid) {
+      startMarker.bindPopup("Départ").openPopup();
+      endMarker.bindPopup("Arrivée");
+    }
 
     // 🔥 Appel API OpenRouteService pour tracer le vrai itinéraire
     const apiKey = '5b3ce3597851110001cf6248b4f3bxxx'; // ← mets ta clé ici
@@ -44,8 +50,8 @@ function MapRoute({ start, end,width,height,isvalid }) {
 
         // Tracer la ligne de la route
         const routeLine = L.polyline(latlngs, {
-          color: 'blue',     // 🔵 couleur du chemin
-          weight: 5,         // épaisseur
+          color: 'blue',
+          weight: 5,
           opacity: 0.8,
         }).addTo(map);
 
@@ -54,19 +60,17 @@ function MapRoute({ start, end,width,height,isvalid }) {
       })
       .catch(err => console.error("Erreur API OpenRouteService:", err));
 
-    // Nettoyage correct à la fin
-    return () => {
-      map.remove();
-    };
-  }, [start, end]);
+    // Nettoyage
+    return () => map.remove();
+  }, [start, end, isvalid, view]);
 
   return (
     <div
-        id="map"
-        style={{
+      id="map"
+      style={{
         height: height,
         width: width,
-        marginLeft:'-15px',
+        marginLeft: '-15px',
       }}
     ></div>
   );

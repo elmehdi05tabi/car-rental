@@ -1,4 +1,9 @@
+@import './style.scss' ; 
 .container {
     width: 100vw;
+    position: relative;
     height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
 }

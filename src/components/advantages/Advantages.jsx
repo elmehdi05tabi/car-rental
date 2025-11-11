@@ -44,6 +44,7 @@ function Advantages() {
     const displayAdvantages = ()=>{
         return listeAvantages.map((adantage,key)=>{
             return <Avantage  
+            key={key}
             icon={adantage.icon}
             title={adantage.title}
             text={adantage.text}

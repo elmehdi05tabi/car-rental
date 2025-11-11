@@ -1,3 +1,4 @@
+
 .containerSection {
     margin-top: 2rem;
     & img:first-child {
@@ -8,6 +9,24 @@
         height: 454px;
         width: 853px;
         margin-top: -300px;
-        margin-left: -74px;
+        margin-left: -65px;
+    }
+}
+@media (max-width:767px) {
+    .containerSection {
+        margin-top: -10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 12rem;
+        img:first-child {
+            width: 396px;
+            height: 268px;
+        }
+        img:last-child {
+            width: 400px;
+            height: 232px;
+            margin-left: 5px;
+        }
+
     }
 }

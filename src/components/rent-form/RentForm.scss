@@ -1,10 +1,7 @@
 @import '../../style.scss' ; 
 .rantFormContainer {
     background-color: $red2;
-    width: inherit;
     height: 294px;
-    width: $widthLarge;
-    margin: auto;
     margin-top: -100px;
     & .btnContainer {
         display: flex;
@@ -13,6 +10,7 @@
         margin: auto;
         & button{
             margin-top: 3rem;
+            cursor: pointer;
             background-color: #fff;
             border: none;
             color: $gray2;
@@ -29,7 +27,7 @@
          background-color: #fff;
     }
 }
-form {
+.fromContainer{
     display: flex;
     justify-content: center;
     gap: 66px;
@@ -51,6 +49,7 @@ form {
         }
         & button {
             background-color: $red;
+            cursor: pointer;
             color: #fff;
             width: 146px;
             height: 58px;
@@ -58,4 +57,9 @@ form {
         }
     }
 
+}
+@media (max-width:767px) {
+    .rantFormContainer {
+        margin-top: 100px;
+    }
 }

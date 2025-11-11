@@ -1,0 +1,46 @@
+@import '../../style.scss' ; 
+.footer {
+    width: $widthLarge;
+    margin: auto;
+   display: flex;
+   background-color: $red2;
+   padding: 10px;
+   height: 260px;
+   justify-content: space-between;
+    margin-top: 5rem;
+    .info {
+        width: 400px;
+        color: $gray2;
+        button {
+            margin-top: 50px;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .menu {
+        gap: 50px;
+        display: flex;
+        .card {
+            width: 150px;
+            display: grid;
+            h2 {
+                color: $gray1;
+            }
+            .btns {
+                margin-top: -14rem;
+            }
+            button {
+                display: block;
+                margin-top: 1rem;
+                text-align: start   ;
+                background-color: transparent;
+                border: none;
+                color: $gray2;
+            }
+            button:hover {
+                color: $red;
+                transform: translateX(2px);
+            }
+        }
+    }
+}

@@ -23,13 +23,37 @@
             width: 202px;
             border: none;
             height: 64px;
+            cursor: pointer;
         }
         button:last-child {
             background-color: #fff;
             border: $red 2px solid ;
             color: $red;
-            width: 160px;
+            width: 202px;
             height: 64px;
+            cursor: pointer;
+        }
+    }
+}
+@media  (max-width : 767px) {
+    .descriptionCotainer {
+        transform: translateY(10px);
+        justify-content: center;
+        width: $widthMin;
+        padding: 5px;
+        & h1{
+            text-align: center;
+            font-size: 35px;
+        }
+        & p {
+            text-align: center;
+            font-size: 16px;
+            width: 100%;
+        }
+        & .btn {
+            text-align: center;
+            flex-direction: column;
+            margin-top: 28rem;
         }
     }
 }

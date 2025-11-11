@@ -1,0 +1,75 @@
+@import '../../style.scss';
+
+.ReviewsContainer {
+    width: $widthLarge;
+    margin: auto;
+    .Info {
+        margin-top: 5rem;
+        text-align: center;
+        h2 {
+            color: $red;
+            font-size: 15px;
+        }
+        h1 {
+            color: $gray1;
+        }
+        p {
+            color: $gray2;
+            font-size: 14px
+        }
+    }
+    .listeReviews {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        .reviewContainer {
+            width: 350px;
+            padding: 12px ; 
+            box-shadow: 1px 1px 5px $gray2;
+            .iconsContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & img {
+                    width: 45px;
+                    height: 45px;
+                }
+                .stars {
+                    display: flex;
+                }
+            }
+            .profileContainer {
+                display: flex;
+                gap: 20px;
+                .user {
+                    display: grid;
+                    color: $gray1;
+                    align-items: center;
+                }
+                img {
+                    width: 55px;
+                    height: 55px;
+                }
+                h4 {
+                    color: $gray2;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        button {
+            background-color: $red;
+            color: white;
+            border: none;
+            width: 116px;
+            height: 58px;
+            margin: auto;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+    }
+}

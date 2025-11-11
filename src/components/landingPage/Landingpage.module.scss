@@ -4,3 +4,10 @@
     width: $widthLarge;
     display: flex;
 }
+@media (max-width:767px) {
+    .containerLandingpage {
+        flex-direction: column;
+        width: $widthMin;
+        margin: 0;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../style.scss'  ;
+.container-confirm {
+    width: $widthLarge;
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: space-between;
+    .mapContainer {
+        margin-top: 2rem;
+    }
+    .confirmFormContainer {
+        width: 40%;
+        height: 400px;
+        .form-group {
+            margin-top: 1rem;
+            label {
+                color: $gray1;
+                font-size: 20px;
+            }
+            input,select {
+                margin-top: 10px;
+                display: block;
+                width: 400px;
+                height: 38px;
+                border: none;
+                box-shadow: 1px 1px 4px $gray2;
+                color: $gray2;
+            }
+            button {
+                background-color: $red;
+                cursor: pointer;
+                border: none;
+                color: #fff;
+                width: 400px;
+                height: 48px;
+            }
+        }
+        .payment {
+            border: 1px solid $gray2;
+            max-width:400px;
+            padding: 10px 0px;
+            label {
+                margin-left: 1rem;
+            }
+            input {
+                width: 90%;
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-top: 2rem;
+    button {
+        background-color: $red;
+        color: #fff;
+        border: none;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 18px;
+        color: $gray2;
+    }
+}

@@ -1,12 +1,16 @@
-import  {configureStore}  from "@reduxjs/toolkit"
+import { configureStore } from "@reduxjs/toolkit"
 import StartAppSlice from '../../features/pages/StartAppSlice'
 import InfoCarsSlice from '../../features/cars/InfoCarsSlice'
 import CoodrsSlice from '../../features/coords/CoordsSlice'
+import ConfirmSlice from '../../features/confirm/ConfirmSlice'
+
 const store = configureStore({
-    reducer : {
-        startApp : StartAppSlice,
-        infoCars : InfoCarsSlice ,
-        coords : CoodrsSlice
-    }
+  reducer: {
+    startApp: StartAppSlice,
+    infoCars: InfoCarsSlice,
+    coords: CoodrsSlice,
+    confirm : ConfirmSlice
+  }
 })
-export default store 
+
+export default store

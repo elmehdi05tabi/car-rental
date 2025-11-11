@@ -1,8 +1,11 @@
 import React from 'react'
+import Form from './Form'
 
 function PrivateDrive() {
   return (
-    <div>PrivateDrive</div>
+    <div>
+      <Form price={200} type={'private'}/>
+    </div>
   )
 }
 

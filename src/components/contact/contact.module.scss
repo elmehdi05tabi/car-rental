@@ -8,6 +8,26 @@
     justify-content: space-between;
     margin-top: 4rem;
 }
+.info {
+    .sausiau {
+        margin-top: 4rem;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+}
+.map {
+    button {
+        margin-top: 3rem;
+        margin-left: -1rem;
+        cursor: pointer;
+        background-color: $red;
+        color: white;
+        border: none;
+        width: 195px;
+        height: 58px;
+    }
+}
 .ContactInfoContainer {
     width: 492px;
     & h3{

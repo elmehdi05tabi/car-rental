@@ -1,0 +1,70 @@
+@import '../../style.scss'; // optional if you have a variables file
+.navbar {
+    display: none;
+}
+.container {
+    width: $widthLarge;
+    margin: auto;
+}
+.about {
+    margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fff;
+  gap: 60px;
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: $gray1;
+    margin-bottom: 20px;
+
+    span {
+      color: $red;
+    }
+  }
+
+  &__text {
+    color: $gray2;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    max-width: 500px;
+  }
+
+  &__btn {
+    background-color: $red;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($red, 5%);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
