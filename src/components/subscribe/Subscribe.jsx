@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Subscribe.scss';
-
+import { motion } from 'framer-motion';
 function Subscribe() {
   const [error, setError] = useState('');
   const emailRef = useRef();
@@ -23,7 +23,12 @@ function Subscribe() {
   };
 
   return (
-    <div className="subscribeContainer">
+    <motion.div 
+     initial={{opacity:0,y:100}}
+    whileInView={{opacity:1,y:0}}
+    transition={{duration:1}}
+    viewport={{ once: true }}
+    className="subscribeContainer">
       <h1>SUBSCRIBE OUR NEWS</h1>
       <p>We can help you provide the latest news whenever and wherever you are via email</p>
       <form onSubmit={handleClick}>
@@ -37,7 +42,7 @@ function Subscribe() {
         />
         <button type="submit">Subscribe</button>
       </form>
-    </div>
+    </motion.div>
   );
 }
 

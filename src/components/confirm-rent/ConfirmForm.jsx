@@ -10,7 +10,6 @@ function ConfirmForm() {
     const [allPrice,setAllPrice]  = useState(confirmInfo.price)
     const [days,setDays] = useState(confirmInfo.days) ; 
     const [typeTrip,setTypeTrip] = useState(confirmInfo.type) ;  
-    // const [valueTrip,setValueTrip] = useState() ;
     const [car,setCar] = useState(infoCars)
     const [isvalid,setIsvalid] = useState(false)
     const [errors, setErrors] = useState({});
@@ -21,10 +20,6 @@ function ConfirmForm() {
             <option key={key} value={car.carName}>{car.carName}</option>
         ))
     }
-
-    // useEffect(()=>{
-    //     setValueTrip(tripRef.current.value)   
-    // })
     const handelChangeDays = (e)=>{
         setDays(e.target.value);
     }

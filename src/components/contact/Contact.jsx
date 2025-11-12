@@ -4,6 +4,7 @@ import MapRoute from '../Map/MapRoute'
 import 'leaflet/dist/leaflet.css';
 import style from './contact.module.scss'
 import Network from './Network.jsx';
+import { motion } from 'framer-motion';
 function Contact() {
   // afficher center office
   const [nb,setNb] = useState(7)
@@ -11,7 +12,12 @@ function Contact() {
     setNb(20) ;
   }
   return (
-    <div id='contact' className={style.contactContainer}>
+    <motion.div 
+     initial={{opacity:0,y:100}}
+    whileInView={{opacity:1,y:0}}
+    transition={{duration:1}}
+    viewport={{ once: true }}
+    id='contact' className={style.contactContainer}>
       <div className={style.info}>
         <ContactInfo/>
         <Network/>
@@ -27,7 +33,7 @@ function Contact() {
         />
         <button onClick={handellClick}>Office Center Map</button>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -5,6 +5,7 @@ import Review from './Review'
 import id1 from '../../images/profile/id1.png'
 import id2 from '../../images/profile/id2.png'
 import id3 from '../../images/profile/id3.png'
+import { motion } from 'framer-motion'
 function Reviews() {
   const [len,setLen] = useState(3) ; 
 const listeReview = [
@@ -70,7 +71,12 @@ const listeReview = [
     })
   } 
   return (
-    <div className={style.ReviewsContainer}>
+    <motion.div
+     initial={{opacity:0,y:100}}
+    whileInView={{opacity:1,y:0}}
+    transition={{duration:1}}
+    viewport={{ once: true }}
+    className={style.ReviewsContainer}>
       <Info/>
       <div className={style.listeReviews}>
       {displayReviews()}
@@ -78,7 +84,7 @@ const listeReview = [
       <div className={style.btn}>
         <button onClick={handelClick}>{len===3 ? 'See All' :'Close'}</button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

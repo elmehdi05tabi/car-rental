@@ -32,6 +32,7 @@ function RentForm() {
         initial={{y:100,opacity:0}}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{duration:1}}
+        viewport={{ once: true }}
         className='formContainer'>
             {renderForm()}
         </motion.div>
