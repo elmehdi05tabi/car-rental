@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import './ourServices.scss'
 import instant from '../../images/bg/instant.png'
 import private_ from '../../images/bg/private.png'
@@ -46,6 +46,7 @@ function OurServices() {
     initial={{opacity:0,y:100}}
     whileInView={{opacity:1,y:0}}
     transition={{duration:1}}
+     viewport={{ once: true }}
     id='services'
     className='services-container'>
       

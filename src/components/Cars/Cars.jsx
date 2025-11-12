@@ -8,7 +8,7 @@ function Cars(){
     const {id} = useParams() ; 
     console.log(id)
     const listeCars = cars.filter((c)=>{
-        return c.id == id
+        return c.id === Number(id)
     })
     console.log(listeCars)
     const displayCars = ()=>{

@@ -6,7 +6,6 @@ function Services({icon,img,title,text}) {
             <img src={icon} alt="img" className='icon' />
         <h2>{title}</h2>
         <p>{text}</p>
-        
     </div>
   )
 }

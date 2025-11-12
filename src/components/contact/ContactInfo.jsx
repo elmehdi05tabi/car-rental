@@ -7,6 +7,7 @@ import Time from '../../icons/Time'
 function ContactInfo() {
   return (
     <div className={style.ContactInfoContainer}>
+        <div className={style.text}></div>
         <h3>GET IN TOUCH</h3>
         <h2>Contact Us</h2>
         <p>if you need consultation with us, you can write a message or call us, we will respond as quickly as possible</p>
@@ -24,11 +25,11 @@ function ContactInfo() {
                 <span>+212 610962163</span>
             </div>
             <div className={style.card}>
-                <span><Time/></span>
+                <button><Time/></button>
                 <span>Everyday : 08.00-21.00</span>
             </div>
             <div className={style.card}>
-                <span><Location2/></span>
+                <button><Location2/></button>
                 <span>Jl. Raya Cihaluan No.112 Tangerang Selatan,Indonesia 41222</span>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './advantages.scss'
 function Info() {
   return (
     <div className='infoContainer'>

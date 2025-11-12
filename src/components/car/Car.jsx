@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { getInfoCars } from '../../features/cars/InfoCarsSlice'
 import Tel from '../../icons/Tel';
-import Location from '../../icons/Location';
+
 function Car({id,marque,categorie,image,carName,type,instantPrice,topSpeed,description,logo,model,seats,margin}) {
   const dispatch = useDispatch() ; 
   const navigate = useNavigate() ; 
@@ -32,10 +32,7 @@ function Car({id,marque,categorie,image,carName,type,instantPrice,topSpeed,descr
         </div>
         <div className={style.description}>
             <h2 v={"true"}>{carName}</h2>
-            <p>
-              <span v={"true"}>${instantPrice} <span>/Day</span></span>
-              <span><Location/></span>
-              </p>
+            <span v={"true"}>${instantPrice}<span>/Day</span></span>
         </div>
         <div className={style.detail}v onClick={handelClick}>
           <Tel/>

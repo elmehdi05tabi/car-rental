@@ -27,7 +27,7 @@
          background-color: #fff;
     }
 }
-.fromContainer{
+.formContainer{
     display: flex;
     justify-content: center;
     gap: 66px;
@@ -60,6 +60,48 @@
 }
 @media (max-width:767px) {
     .rantFormContainer {
-        margin-top: 100px;
+        height: fit-content;
+        margin-top: 200px;
+        padding: 5px;
+        width: calc($widthMin + 50px);
+        & .btnContainer {
+            align-items: center;
+            width: inherit;
+            & button {
+                margin-top:1rem ;
+            }
+        }
+        & .formContainer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:$red2;
+            width:100%;
+            margin-top: 1rem;
+            & .form-group {
+                margin: -19px;
+                input {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1024px)  {
+    .rantFormContainer {
+        .btnContainer {
+            margin:0 ;
+        }
+        .formContainer {
+            width: inherit;
+            justify-content: start;
+            gap: 5px;
+            
+             & .form-group {
+                & button {
+                    width:130px ;
+                }
+            }
+        }
     }
 }

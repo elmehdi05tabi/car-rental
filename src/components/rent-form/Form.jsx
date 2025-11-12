@@ -1,4 +1,3 @@
-import React, { createContext, useContext } from 'react'
 import { useState ,useRef,useEffect} from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -125,7 +124,7 @@ function Form({price,type,path='/confirm-rent-car'}) {
     }
   return (
     <div>
-        <div className="fromContainer">
+        <div className="formContainer">
 
             <div className="form-group">
                 <label 
@@ -140,7 +139,7 @@ function Form({price,type,path='/confirm-rent-car'}) {
                 ref={startRef} 
                 style={errors.start&&{border:'1px red solid'}}
                 />
-                {errors.start&& <p style={{color:'red',fontSize:'15px'}}>{errors.start}</p>}
+                
                 <datalist id='startlocation'>
                     {displaytCitieStart()}
                 </datalist>
@@ -154,7 +153,7 @@ function Form({price,type,path='/confirm-rent-car'}) {
                 onChange={handelChangeEnd}
                 style={errors.end &&{border:'1px red solid'}}
                 />
-                 {errors.end&& <p style={{color:'red',fontSize:'15px',}}>{errors.start}</p>}
+                
                 <datalist id='endlocation'>
                     {displaytCitieEnd()}
                 </datalist>
@@ -167,8 +166,7 @@ function Form({price,type,path='/confirm-rent-car'}) {
                 <input type="text" id='estimateTime' placeholder='How many days' 
                 style={errors.days &&{border:'1px red solid',}}
                 onChange={handelChangeTime} />
-                 {errors.days&& <p style={{color:'red',fontSize:'15px',marginTop:'2rem'}}>{errors.start}</p>}
-            </div>
+                </div>
             <div className='form-group'>
                 <label>Pricing</label>
                 <div></div>

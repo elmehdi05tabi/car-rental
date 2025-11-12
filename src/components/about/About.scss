@@ -1,12 +1,9 @@
 @import '../../style.scss'; // optional if you have a variables file
-.navbar {
-    display: none;
-}
 .container {
     width: $widthLarge;
     margin: auto;
 }
-.about {
+.about   {
     margin-top: 3rem;
   display: flex;
   align-items: center;
@@ -67,4 +64,12 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
   }
+}
+@media (max-width : 767px ){
+.about {
+  flex-direction: column;
+  width:$widthMin ;
+  margin: 0;
+  margin-left: 1rem;
+}
 }

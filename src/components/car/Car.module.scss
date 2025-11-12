@@ -28,10 +28,14 @@
 .description span {
     color :#D9D9D9 ;
 } 
-.description p span{
+.description  span:last-child{
     font-size: 25px;
     font-weight: bold;
     color: black;
+    span {
+        color: #D9D9D9;
+        font-size: 14px;
+    }
 }
 .description p {
     display: flex;
@@ -54,4 +58,15 @@
     font-size: 20px;
     cursor: pointer;
     padding-left: 2rem;
+}
+@media (max-width:767px) {
+    .detail{
+        width: 60%;
+        margin-left: 1.3rem ;
+    }
+}
+@media (min-width:768px) and (max-width:1024px)  {
+    .carContainer {
+        width: 380px;
+    }
 }

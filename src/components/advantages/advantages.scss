@@ -36,3 +36,44 @@
         color: $gray2;
     }
 }
+@media (max-width:767px) {
+    .advantages-container {
+        width: $widthMin;
+        margin: 0;
+        margin-top: 20rem;
+    }
+    .infoContainer {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        text-align: center;
+        p {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    .listeAvnatge {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+    .text p {
+        width: 80%;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1024px)  {
+    .advantages-container {
+        width: calc($widthMediem + 130px);
+        margin: 0;
+         .infoContainer  {
+            width: 100%;
+         }
+        .listeAvnatge {
+            justify-content: space-between;
+            .avantage {
+                width: 300px;
+                margin-top: 2rem;
+            }
+        }
+    }
+ }

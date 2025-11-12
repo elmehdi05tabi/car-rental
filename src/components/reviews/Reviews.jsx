@@ -76,7 +76,7 @@ const listeReview = [
       {displayReviews()}
       </div>
       <div className={style.btn}>
-        <button onClick={handelClick}>{len==3 ? 'See All' :'Close'}</button>
+        <button onClick={handelClick}>{len===3 ? 'See All' :'Close'}</button>
       </div>
     </div>
   )

@@ -1,4 +1,3 @@
-import React from 'react'
 import Car from '../car/Car';
 import { useState } from 'react';
 import LexusCT200H from '../../images/cars/carsImage/LexusCT200H.png'
@@ -12,7 +11,6 @@ import honda from '../../images/cars/carsImage/honda.png'
 import './popularCar.scss'
 import { motion } from 'framer-motion';
 import Info from './Info';
-import { image } from 'framer-motion/client';
 export const cars = [
   {   id :0,
     marque: 'Lexus',

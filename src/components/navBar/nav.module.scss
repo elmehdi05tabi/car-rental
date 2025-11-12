@@ -70,6 +70,16 @@
     }
 
 }
+@media (min-width:768px) and (max-width:1024px) {
+    .navContainer {
+        width: $widthMediem;
+        margin: 0;
+        gap: 250px;
+    }
+    .navbar {
+        gap: 20px;
+    }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

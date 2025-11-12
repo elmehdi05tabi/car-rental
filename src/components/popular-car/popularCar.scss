@@ -40,3 +40,40 @@
     border: none;
     margin-top: 2rem;
 }
+@media (max-width:767px) {
+    .popularCarContainer{
+        width: $widthMin;
+    }
+    .infoContainer {
+        display: grid;
+        width: $widthMin;
+        margin: 0;
+        & h1,h2,p {
+            width: $widthMin;
+        }
+    }
+    .cars-container {
+        flex-direction: column;
+        width: $widthMin;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px)  {
+    .popularCarContainer{
+        width: $widthMediem;
+        h1,h2,p {
+                width: $widthMediem;
+                margin-left: 3.5rem;
+            }
+    }
+    .cars-container {
+        flex-wrap: wrap;
+        width: calc($widthMediem + 100px );
+        justify-content: start;
+        margin: 0;
+        margin-left: 1rem;
+    }
+    .All {
+        margin-left: 22rem;
+    }
+}

@@ -4,6 +4,7 @@
     margin: auto;
    display: flex;
    background-color: $red2;
+   flex-wrap: wrap;
    padding: 10px;
    height: 260px;
    justify-content: space-between;
@@ -42,5 +43,36 @@
                 transform: translateX(2px);
             }
         }
+    }
+}
+@media (max-width:767px){
+    .footer {
+        width: 400px;
+        margin: 0;
+        margin-top: 2rem;
+        height: fit-content;
+        p {
+            width: 90%;
+        }
+    }
+    .menu {
+        width: $widthMin;
+        flex-wrap: wrap;
+        .card:last-child {
+            margin-top: -21rem;
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1024px)  {
+    .footer {
+        width: calc($widthMediem + 150px );
+        margin: 0;
+        margin-top: 2rem;
+        justify-content: start;
+        height: 300px;
+    }
+    .menu {
+        width: $widthMin;
+        gap: 0;    
     }
 }

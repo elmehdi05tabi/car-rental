@@ -6,7 +6,7 @@
     margin-top: 3rem;
     justify-content: space-between;
     .mapContainer {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
     .confirmFormContainer {
         width: 40%;
@@ -70,5 +70,47 @@
     h1 {
         font-size: 18px;
         color: $gray2;
+    }
+}
+@media (max-width:767px) {
+    .container-confirm  {
+        flex-direction: column;
+        gap: 300px;
+        width: $widthMin;
+        margin: 0;
+        .mapContainer {
+            display: none;
+        }
+           .payment {
+                width: 400px;
+                input {
+                    width: 250px;
+                }
+            } 
+
+    }
+}
+@media (min-width:768px) and (max-width:1024px)  {
+    .container-confirm {
+        width: calc($widthMediem + 170px );
+        margin: 0;
+        justify-content: start;
+        .confirmFormContainer {
+            .form-group {
+                input,select {
+                    width: 300px;
+                }
+                button {
+                    width: 300px;
+                }
+            }
+            .payment {
+                width: 300px;
+                input {
+                    width: 250px;
+                }
+            } 
+
+        }
     }
 }

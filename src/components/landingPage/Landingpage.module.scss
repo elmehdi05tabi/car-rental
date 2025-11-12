@@ -11,3 +11,11 @@
         margin: 0;
     }
 }
+@media (min-width:768px) and (max-width:1024px)  {
+    .containerLandingpage {
+        width: $widthMediem;
+        margin: 0;
+        gap: 52px;
+    }
+
+}

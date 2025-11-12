@@ -7,7 +7,7 @@ import Fc from '../../icons/Fc';
 import Twiter from '../../icons/Twiter';
 function Network() {
   return (
-    <div>
+    <div className={style.network}>
         <motion.button 
         whileHover={{y:-2}}
         className={style.sausiau} onClick={()=>{window.location.href='https://www.linkedin.com/in/el-mehdi-tabi-03b80428a/'}}>

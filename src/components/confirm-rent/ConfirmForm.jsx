@@ -1,18 +1,16 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, {  useEffect, useRef, useState } from 'react'
 import './confirmRent.scss' ; 
 import { useSelector } from 'react-redux';
 import { cars } from '../popular-car/PopularCar';
 import { motion } from 'framer-motion';
 import Footer from '../footer/Footer';
-import { Form } from 'react-router-dom';
-
 function ConfirmForm() {
     const infoCars = useSelector(({infoCars})=>infoCars);
     const confirmInfo = useSelector(({confirm})=>confirm)
     const [allPrice,setAllPrice]  = useState(confirmInfo.price)
     const [days,setDays] = useState(confirmInfo.days) ; 
     const [typeTrip,setTypeTrip] = useState(confirmInfo.type) ;  
-    const [valueTrip,setValueTrip] = useState() ;
+    // const [valueTrip,setValueTrip] = useState() ;
     const [car,setCar] = useState(infoCars)
     const [isvalid,setIsvalid] = useState(false)
     const [errors, setErrors] = useState({});
@@ -24,10 +22,9 @@ function ConfirmForm() {
         ))
     }
 
-    useEffect(()=>{
-        setValueTrip(tripRef.current.value)   
-    })
-
+    // useEffect(()=>{
+    //     setValueTrip(tripRef.current.value)   
+    // })
     const handelChangeDays = (e)=>{
         setDays(e.target.value);
     }

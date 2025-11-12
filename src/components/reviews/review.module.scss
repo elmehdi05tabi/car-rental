@@ -73,3 +73,22 @@
         }
     }
 }
+@media (max-width:767px) {
+.ReviewsContainer {
+    width: 400px;
+    margin: 0;
+    margin-top: 40rem;
+}
+.listeReviews {
+   margin-left: .5rem;
+}
+    
+}
+@media (min-width:768px) and (max-width:1024px)  {
+    .ReviewsContainer {
+        width: calc($widthMediem + 130px);
+        margin: 0;
+        margin-top: 40rem;
+        justify-content: center;
+    }
+}
